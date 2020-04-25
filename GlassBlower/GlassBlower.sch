@@ -1,0 +1,952 @@
+EESchema Schematic File Version 4
+LIBS:GlassBlower-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Switch:SW_SPDT SW2
+U 1 1 5B1129E8
+P 5950 5875
+F 0 "SW2" H 5950 6045 50  0000 C CNN
+F 1 "SW_SPDT" H 5950 5675 50  0000 C CNN
+F 2 "BurstGen:SW_SubMicro_SPST" H 5950 5875 50  0001 C CNN
+F 3 "" H 5950 5875 50  0001 C CNN
+F 4 "EG2447-ND" H 0   0   50  0001 C CNN "MPN"
+	1    5950 5875
+	0    1    1    0   
+$EndComp
+$Comp
+L GlassBlower-rescue:Jack-DC-EngineersThumb-rescue J1
+U 1 1 5B113E16
+P 2250 1300
+F 0 "J1" H 2250 1510 50  0000 C CNN
+F 1 "Jack-DC" H 2250 1125 50  0000 C CNN
+F 2 "Connectors:BARREL_JACK" H 2300 1260 50  0001 C CNN
+F 3 "" H 2300 1260 50  0001 C CNN
+F 4 "PJ-002B" H 0   0   50  0001 C CNN "MPN"
+	1    2250 1300
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5B113FE5
+P 2650 1750
+F 0 "BT1" H 2400 1900 50  0000 L CNN
+F 1 "Battery_Cell" H 2100 1775 50  0000 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x02_P3.81mm_Drill1.2mm" V 2650 1810 50  0001 C CNN
+F 3 "" V 2650 1810 50  0001 C CNN
+F 4 "36-232-ND" H 0   0   50  0001 C CNN "MPN"
+	1    2650 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 5B1140A7
+P 3150 1800
+F 0 "D1" H 3150 1900 50  0000 C CNN
+F 1 "1N4001" H 3150 1700 50  0000 C CNN
+F 2 "BurstGen:D_DO-35_SOD27_P7.62mm_Horizontal" H 3150 1800 50  0001 C CNN
+F 3 "" H 3150 1800 50  0001 C CNN
+F 4 "641-1310-1-ND" H 0   0   50  0001 C CNN "MPN"
+	1    3150 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP C2
+U 1 1 5B1166AC
+P 3450 1800
+F 0 "C2" H 3475 1900 50  0000 L CNN
+F 1 "10u" H 3475 1700 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 3488 1650 50  0001 C CNN
+F 3 "" H 3450 1800 50  0001 C CNN
+F 4 "P19549CT-ND" H 0   0   50  0001 C CNN "MPN"
+	1    3450 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 1650 3450 1200
+Connection ~ 3450 1200
+$Comp
+L power:GND #PWR03
+U 1 1 5B118AAB
+P 2250 3825
+F 0 "#PWR03" H 2250 3575 50  0001 C CNN
+F 1 "GND" H 2250 3675 50  0000 C CNN
+F 2 "" H 2250 3825 50  0001 C CNN
+F 3 "" H 2250 3825 50  0001 C CNN
+	1    2250 3825
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5B118CF4
+P 2900 3925
+F 0 "R8" V 2980 3925 50  0000 C CNN
+F 1 "10M" V 2900 3925 50  0000 C CNN
+F 2 "BurstGen:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2830 3925 50  0001 C CNN
+F 3 "" H 2900 3925 50  0001 C CNN
+F 4 "CF14JT10M0CT-ND" H 0   0   50  0001 C CNN "MPN"
+	1    2900 3925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5B118DF6
+P 3125 3525
+F 0 "C4" H 3150 3625 50  0000 L CNN
+F 1 "100n" H 3150 3425 50  0000 L CNN
+F 2 "BurstGen:C_Disc_D5.0mm_W2.5mm_P5.00mm-TC" H 3163 3375 50  0001 C CNN
+F 3 "" H 3125 3525 50  0001 C CNN
+F 4 "399-5444-1-ND" H 0   0   50  0001 C CNN "MPN"
+	1    3125 3525
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5B1194D4
+P 2675 4550
+F 0 "#PWR04" H 2675 4300 50  0001 C CNN
+F 1 "GND" H 2675 4400 50  0000 C CNN
+F 2 "" H 2675 4550 50  0001 C CNN
+F 3 "" H 2675 4550 50  0001 C CNN
+	1    2675 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 1550 2650 1300
+Wire Wire Line
+	2650 1300 2550 1300
+Wire Wire Line
+	2550 1400 2850 1400
+$Comp
+L power:GND #PWR01
+U 1 1 5B11DAB2
+P 7300 2250
+F 0 "#PWR01" H 7300 2000 50  0001 C CNN
+F 1 "GND" H 7300 2100 50  0000 C CNN
+F 2 "" H 7300 2250 50  0001 C CNN
+F 3 "" H 7300 2250 50  0001 C CNN
+	1    7300 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 3425 2650 3425
+Wire Wire Line
+	2250 3725 2250 3775
+Wire Wire Line
+	2900 3525 2900 3775
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5B20E2AA
+P 3900 1150
+F 0 "#FLG01" H 3900 1225 50  0001 C CNN
+F 1 "PWR_FLAG" H 3900 1300 50  0000 C CNN
+F 2 "" H 3900 1150 50  0001 C CNN
+F 3 "" H 3900 1150 50  0001 C CNN
+	1    3900 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 1150 3900 1200
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5B20E6FD
+P 2150 3775
+F 0 "#FLG02" H 2150 3850 50  0001 C CNN
+F 1 "PWR_FLAG" H 2150 3925 50  0000 C CNN
+F 2 "" H 2150 3775 50  0001 C CNN
+F 3 "" H 2150 3775 50  0001 C CNN
+	1    2150 3775
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2250 3775
+Wire Wire Line
+	2150 3775 2250 3775
+Wire Wire Line
+	3450 1200 3900 1200
+Wire Wire Line
+	2250 3775 2250 3825
+Wire Wire Line
+	3150 1950 3150 2450
+Wire Wire Line
+	3150 1650 3150 1200
+Connection ~ 3150 1200
+Wire Wire Line
+	3150 1200 3450 1200
+$Comp
+L Device:R_POT RV1
+U 1 1 5BB8EB23
+P 5950 5275
+F 0 "RV1" V 5775 5275 50  0000 C CNN
+F 1 "47k" V 5850 5275 50  0000 C CNN
+F 2 "BurstGen:Potentiometer_PCB_rightangle" H 5950 5275 50  0001 C CNN
+F 3 "" H 5950 5275 50  0001 C CNN
+	1    5950 5275
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7300 2150 7300 2200
+$Comp
+L Transistor_BJT:BC327 Q2
+U 1 1 5BD0E79B
+P 6875 3900
+F 0 "Q2" H 7066 3854 50  0000 L CNN
+F 1 "BC327" H 7066 3945 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_HandSolder" H 7075 3825 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/BC327-D.PDF" H 6875 3900 50  0001 L CNN
+F 4 "BC327OS-ND" H 0   0   50  0001 C CNN "MPN"
+	1    6875 3900
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2850 2450 3150 2450
+Wire Wire Line
+	2850 1400 2850 2450
+Wire Wire Line
+	3275 3525 3425 3525
+Wire Wire Line
+	2900 4075 2900 4500
+$Comp
+L Connector:AudioJack2_Ground J3
+U 1 1 5CA5733E
+P 2250 3525
+F 0 "J3" H 2280 3850 50  0000 C CNN
+F 1 "AudioJack2_Ground" H 2280 3759 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x03_P3.81mm_Drill1.2mm" H 2250 3525 50  0001 C CNN
+F 3 "~" H 2250 3525 50  0001 C CNN
+	1    2250 3525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2 J2
+U 1 1 5CA57F65
+P 8400 1650
+F 0 "J2" H 8220 1633 50  0000 R CNN
+F 1 "AudioJack2" H 8220 1724 50  0000 R CNN
+F 2 "Connector_Wire:SolderWirePad_1x02_P3.81mm_Drill1.2mm" H 8400 1650 50  0001 C CNN
+F 3 "~" H 8400 1650 50  0001 C CNN
+	1    8400 1650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:TL072 U1
+U 1 1 5CA5ABE2
+P 4975 3625
+F 0 "U1" H 4975 3992 50  0000 C CNN
+F 1 "TL072" H 4975 3901 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 4975 3625 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 4975 3625 50  0001 C CNN
+	1    4975 3625
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL072 U1
+U 2 1 5CA5AD1F
+P 6450 1650
+F 0 "U1" H 6450 2017 50  0000 C CNN
+F 1 "TL072" H 6450 1926 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 6450 1650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6450 1650 50  0001 C CNN
+	2    6450 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL072 U1
+U 3 1 5CA5ADB3
+P 8125 3600
+F 0 "U1" H 8083 3646 50  0000 L CNN
+F 1 "TL072" H 8083 3555 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 8125 3600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8125 3600 50  0001 C CNN
+	3    8125 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC337 Q1
+U 1 1 5CA5AF0C
+P 6875 3350
+F 0 "Q1" H 7066 3396 50  0000 L CNN
+F 1 "BC337" H 7066 3305 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_HandSolder" H 7075 3275 50  0001 L CIN
+F 3 "http://www.nxp.com/documents/data_sheet/BC817_BC817W_BC337.pdf" H 6875 3350 50  0001 L CNN
+F 4 "BC33725BU-ND" H 0   0   50  0001 C CNN "MPN"
+	1    6875 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5CA2A61D
+P 3425 3825
+F 0 "R5" H 3495 3871 50  0000 L CNN
+F 1 "1Meg" H 3495 3780 50  0000 L CNN
+F 2 "BurstGen:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3355 3825 50  0001 C CNN
+F 3 "~" H 3425 3825 50  0001 C CNN
+F 4 "1.00MXBK-ND" H 0   0   50  0001 C CNN "MPN"
+	1    3425 3825
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5CA2AE3E
+P 3775 3825
+F 0 "R6" H 3845 3871 50  0000 L CNN
+F 1 "22k" H 3845 3780 50  0000 L CNN
+F 2 "BurstGen:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3705 3825 50  0001 C CNN
+F 3 "~" H 3775 3825 50  0001 C CNN
+F 4 "22.1KXBK-ND" H 0   0   50  0001 C CNN "MPN"
+	1    3775 3825
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5CA2B639
+P 3775 4300
+F 0 "R9" H 3845 4346 50  0000 L CNN
+F 1 "27k" H 3845 4255 50  0000 L CNN
+F 2 "BurstGen:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3705 4300 50  0001 C CNN
+F 3 "~" H 3775 4300 50  0001 C CNN
+F 4 "27.4KXBK-ND" H 0   0   50  0001 C CNN "MPN"
+	1    3775 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C6
+U 1 1 5CA2BECD
+P 3425 4300
+F 0 "C6" H 3543 4346 50  0000 L CNN
+F 1 "10u" H 3543 4255 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 3463 4150 50  0001 C CNN
+F 3 "~" H 3425 4300 50  0001 C CNN
+F 4 "P19549CT-ND" H 0   0   50  0001 C CNN "MPN"
+	1    3425 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GlassBlower-rescue:SW_SPDT-EngineersThumb-rescue SW1
+U 1 1 5CA2CF28
+P 4175 4650
+F 0 "SW1" H 4175 4325 50  0000 C CNN
+F 1 "SW_SPDT" H 4175 4416 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x03_P3.81mm_Drill1.2mm" H 4175 4650 50  0001 C CNN
+F 3 "" H 4175 4650 50  0001 C CNN
+F 4 "EG5497-ND" H 0   0   50  0001 C CNN "MPN"
+	1    4175 4650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3425 3675 3425 3525
+Connection ~ 3425 3525
+Wire Wire Line
+	3425 3525 4675 3525
+Wire Wire Line
+	3425 3975 3425 4075
+Wire Wire Line
+	3775 3975 3775 4075
+Wire Wire Line
+	3775 4075 3425 4075
+Connection ~ 3775 4075
+Wire Wire Line
+	3775 4075 3775 4150
+Connection ~ 3425 4075
+Wire Wire Line
+	3425 4075 3425 4150
+Wire Wire Line
+	2675 4500 2900 4500
+Wire Wire Line
+	3425 4500 3425 4450
+Wire Wire Line
+	2675 4500 2675 4550
+Wire Wire Line
+	3775 4500 3775 4450
+Connection ~ 3425 4500
+Wire Wire Line
+	3150 2450 3450 2450
+Wire Wire Line
+	3450 1950 3450 2450
+Connection ~ 3150 2450
+Wire Wire Line
+	2550 1200 3150 1200
+$Comp
+L Device:R R7
+U 1 1 5CA35F52
+P 4400 3825
+F 0 "R7" H 4470 3871 50  0000 L CNN
+F 1 "1k" H 4470 3780 50  0000 L CNN
+F 2 "BurstGen:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4330 3825 50  0001 C CNN
+F 3 "~" H 4400 3825 50  0001 C CNN
+F 4 "1.00KXBK-ND" H 0   0   50  0001 C CNN "MPN"
+	1    4400 3825
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D5
+U 1 1 5CA385A8
+P 5175 4650
+F 0 "D5" H 5175 4866 50  0000 C CNN
+F 1 "1N4148" H 5175 4775 50  0000 C CNN
+F 2 "BurstGen:D_DO-35_SOD27_P7.62mm_Horizontal" H 5175 4650 50  0001 C CNN
+F 3 "~" H 5175 4650 50  0001 C CNN
+F 4 "1N4148FS-ND" H 0   0   50  0001 C CNN "MPN"
+	1    5175 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 5CA3AA58
+P 4400 4250
+F 0 "D4" V 4439 4133 50  0000 R CNN
+F 1 "LED" V 4348 4133 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 4400 4250 50  0001 C CNN
+F 3 "~" H 4400 4250 50  0001 C CNN
+F 4 "732-5005-ND" H 0   0   50  0001 C CNN "MPN"
+	1    4400 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5CA3BDC1
+P 4700 4650
+F 0 "R11" V 4493 4650 50  0000 C CNN
+F 1 "100k" V 4584 4650 50  0000 C CNN
+F 2 "BurstGen:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4630 4650 50  0001 C CNN
+F 3 "~" H 4700 4650 50  0001 C CNN
+F 4 "100KXBK-ND" H 0   0   50  0001 C CNN "MPN"
+	1    4700 4650
+	0    1    1    0   
+$EndComp
+Connection ~ 3900 1200
+Wire Wire Line
+	3775 3675 3775 2575
+Wire Wire Line
+	3775 2575 3975 2575
+Connection ~ 3975 2575
+$Comp
+L Device:CP C7
+U 1 1 5CA45054
+P 4925 4975
+F 0 "C7" H 5043 5021 50  0000 L CNN
+F 1 "100n" H 5043 4930 50  0000 L CNN
+F 2 "BurstGen:C_Disc_D5.0mm_W2.5mm_P5.00mm-TC" H 4963 4825 50  0001 C CNN
+F 3 "~" H 4925 4975 50  0001 C CNN
+F 4 "399-5444-1-ND" H 0   0   50  0001 C CNN "MPN"
+	1    4925 4975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3425 4500 3775 4500
+Wire Wire Line
+	3975 4750 3975 5375
+Wire Wire Line
+	3975 5375 4925 5375
+Wire Wire Line
+	4925 5375 4925 5125
+$Comp
+L power:GND #PWR06
+U 1 1 5CA468EF
+P 3975 5450
+F 0 "#PWR06" H 3975 5200 50  0001 C CNN
+F 1 "GND" H 3975 5300 50  0000 C CNN
+F 2 "" H 3975 5450 50  0001 C CNN
+F 3 "" H 3975 5450 50  0001 C CNN
+	1    3975 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3975 5450 3975 5375
+Connection ~ 3975 5375
+Wire Wire Line
+	3975 2575 4400 2575
+Wire Wire Line
+	4400 2575 4400 3675
+Wire Wire Line
+	4400 3975 4400 4100
+Wire Wire Line
+	4400 4400 4400 4650
+Wire Wire Line
+	4400 4650 4375 4650
+Wire Wire Line
+	4550 4650 4400 4650
+Connection ~ 4400 4650
+Wire Wire Line
+	4850 4650 4925 4650
+Wire Wire Line
+	4925 4825 4925 4650
+Connection ~ 4925 4650
+Wire Wire Line
+	4925 4650 5025 4650
+$Comp
+L Device:Q_NJFET_DSG Q3
+U 1 1 5CA4E5BB
+P 5675 4175
+F 0 "Q3" V 6003 4175 50  0000 C CNN
+F 1 "J112" V 5912 4175 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_HandSolder" H 5875 4275 50  0001 C CNN
+F 3 "~" H 5675 4175 50  0001 C CNN
+F 4 "J112FS-ND" H 0   0   50  0001 C CNN "MPN"
+	1    5675 4175
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4675 3725 4675 4075
+Wire Wire Line
+	4675 4075 5375 4075
+Wire Wire Line
+	5675 4375 5675 4650
+Wire Wire Line
+	5675 4650 5325 4650
+$Comp
+L Device:C C8
+U 1 1 5CA54DDC
+P 5650 4975
+F 0 "C8" V 5398 4975 50  0000 C CNN
+F 1 "100p" V 5489 4975 50  0000 C CNN
+F 2 "BurstGen:C_Disc_D5.0mm_W2.5mm_P5.00mm-TC" H 5688 4825 50  0001 C CNN
+F 3 "~" H 5650 4975 50  0001 C CNN
+F 4 "445-173472-1-ND" H 0   0   50  0001 C CNN "MPN"
+	1    5650 4975
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5375 4075 5375 4975
+Wire Wire Line
+	5375 4975 5500 4975
+Connection ~ 5375 4075
+Wire Wire Line
+	5375 4075 5475 4075
+Wire Wire Line
+	5275 3625 5950 3625
+Wire Wire Line
+	5950 3625 5950 4075
+Wire Wire Line
+	5950 4075 5875 4075
+Wire Wire Line
+	5950 4075 5950 4975
+Wire Wire Line
+	5950 4975 5800 4975
+Connection ~ 5950 4075
+Wire Wire Line
+	5800 5275 5425 5275
+Wire Wire Line
+	5375 5275 5375 4975
+Connection ~ 5375 4975
+Wire Wire Line
+	5950 5125 5950 4975
+Connection ~ 5950 4975
+$Comp
+L Device:R R12
+U 1 1 5CA60AD9
+P 5700 5550
+F 0 "R12" V 5493 5550 50  0000 C CNN
+F 1 "4.7k" V 5584 5550 50  0000 C CNN
+F 2 "BurstGen:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5630 5550 50  0001 C CNN
+F 3 "~" H 5700 5550 50  0001 C CNN
+F 4 "4.64KXBK-ND " H 0   0   50  0001 C CNN "MPN"
+	1    5700 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 5CA61703
+P 6050 6350
+F 0 "R14" H 5980 6304 50  0000 R CNN
+F 1 "4.7k" H 5980 6395 50  0000 R CNN
+F 2 "BurstGen:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5980 6350 50  0001 C CNN
+F 3 "~" H 6050 6350 50  0001 C CNN
+F 4 "4.64KXBK-ND " H 0   0   50  0001 C CNN "MPN"
+	1    6050 6350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP C10
+U 1 1 5CA64426
+P 6050 6750
+F 0 "C10" H 6168 6796 50  0000 L CNN
+F 1 "470n" H 6168 6705 50  0000 L CNN
+F 2 "BurstGen:C_Disc_D5.0mm_W2.5mm_P5.00mm-TC" H 6088 6600 50  0001 C CNN
+F 3 "~" H 6050 6750 50  0001 C CNN
+F 4 "399-11865-1-ND" H 0   0   50  0001 C CNN "MPN"
+	1    6050 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R15
+U 1 1 5CA64CB7
+P 6425 6350
+F 0 "R15" H 6355 6304 50  0000 R CNN
+F 1 "4.7k" H 6355 6395 50  0000 R CNN
+F 2 "BurstGen:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6355 6350 50  0001 C CNN
+F 3 "~" H 6425 6350 50  0001 C CNN
+F 4 "4.64KXBK-ND " H 0   0   50  0001 C CNN "MPN"
+	1    6425 6350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP C11
+U 1 1 5CA65545
+P 6425 6750
+F 0 "C11" H 6543 6796 50  0000 L CNN
+F 1 "22n" H 6543 6705 50  0000 L CNN
+F 2 "BurstGen:C_Disc_D5.0mm_W2.5mm_P5.00mm-TC" H 6463 6600 50  0001 C CNN
+F 3 "~" H 6425 6750 50  0001 C CNN
+F 4 "399-5451-1-ND" H 0   0   50  0001 C CNN "MPN"
+	1    6425 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5CA65B18
+P 6225 7025
+F 0 "#PWR07" H 6225 6775 50  0001 C CNN
+F 1 "GND" H 6225 6875 50  0000 C CNN
+F 2 "" H 6225 7025 50  0001 C CNN
+F 3 "" H 6225 7025 50  0001 C CNN
+	1    6225 7025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5425 5275 5425 5550
+Wire Wire Line
+	5425 5550 5550 5550
+Connection ~ 5425 5275
+Wire Wire Line
+	5425 5275 5375 5275
+Wire Wire Line
+	5950 5425 5950 5550
+Wire Wire Line
+	5850 5550 5950 5550
+Connection ~ 5950 5550
+Wire Wire Line
+	5950 5550 5950 5675
+Wire Wire Line
+	6050 6200 6050 6150
+Wire Wire Line
+	6425 6150 6425 6200
+Wire Wire Line
+	6050 6600 6050 6500
+Wire Wire Line
+	6425 6600 6425 6500
+Wire Wire Line
+	6050 6900 6050 6975
+Wire Wire Line
+	6050 6975 6225 6975
+Wire Wire Line
+	6425 6975 6425 6900
+Wire Wire Line
+	6225 7025 6225 6975
+Connection ~ 6225 6975
+Wire Wire Line
+	6225 6975 6425 6975
+$Comp
+L Device:R R4
+U 1 1 5CA76EEC
+P 6275 3625
+F 0 "R4" V 6068 3625 50  0000 C CNN
+F 1 "20k" V 6159 3625 50  0000 C CNN
+F 2 "BurstGen:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6205 3625 50  0001 C CNN
+F 3 "~" H 6275 3625 50  0001 C CNN
+F 4 "20.0KXBK-ND" H 0   0   50  0001 C CNN "MPN"
+	1    6275 3625
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6125 3625 5950 3625
+Connection ~ 5950 3625
+Wire Wire Line
+	6425 3625 6675 3625
+Wire Wire Line
+	6675 3625 6675 3350
+Wire Wire Line
+	6675 3900 6675 3625
+Connection ~ 6675 3625
+Wire Wire Line
+	6975 3700 6975 3625
+$Comp
+L Device:CP C3
+U 1 1 5CA85AF3
+P 7525 3325
+F 0 "C3" H 7643 3371 50  0000 L CNN
+F 1 "100u" H 7643 3280 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 7563 3175 50  0001 C CNN
+F 3 "~" H 7525 3325 50  0001 C CNN
+F 4 "493-12902-1-ND" H 0   0   50  0001 C CNN "MPN"
+	1    7525 3325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C5
+U 1 1 5CA86B43
+P 7525 3900
+F 0 "C5" H 7643 3946 50  0000 L CNN
+F 1 "100u" H 7643 3855 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 7563 3750 50  0001 C CNN
+F 3 "~" H 7525 3900 50  0001 C CNN
+F 4 "493-12902-1-ND" H 0   0   50  0001 C CNN "MPN"
+	1    7525 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6975 3625 7525 3625
+Wire Wire Line
+	7525 3625 7525 3475
+Connection ~ 6975 3625
+Wire Wire Line
+	6975 3625 6975 3550
+Wire Wire Line
+	7525 3750 7525 3625
+Connection ~ 7525 3625
+Wire Wire Line
+	6975 3150 6975 2575
+Wire Wire Line
+	6975 2575 4400 2575
+Connection ~ 4400 2575
+$Comp
+L power:GND #PWR05
+U 1 1 5CA917F8
+P 6975 4675
+F 0 "#PWR05" H 6975 4425 50  0001 C CNN
+F 1 "GND" H 6975 4525 50  0000 C CNN
+F 2 "" H 6975 4675 50  0001 C CNN
+F 3 "" H 6975 4675 50  0001 C CNN
+	1    6975 4675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6975 4675 6975 4575
+Wire Wire Line
+	7525 3175 7775 3175
+Wire Wire Line
+	8025 3175 8025 3300
+Wire Wire Line
+	7525 4050 7775 4050
+Wire Wire Line
+	8025 4050 8025 3900
+$Comp
+L Device:R R10
+U 1 1 5CA9DB64
+P 7775 4325
+F 0 "R10" H 7705 4279 50  0000 R CNN
+F 1 "220r" H 7705 4370 50  0000 R CNN
+F 2 "BurstGen:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7705 4325 50  0001 C CNN
+F 3 "~" H 7775 4325 50  0001 C CNN
+F 4 "221XBK-ND " H 0   0   50  0001 C CNN "MPN"
+	1    7775 4325
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6975 4575 7775 4575
+Wire Wire Line
+	7775 4575 7775 4475
+Connection ~ 6975 4575
+Wire Wire Line
+	6975 4575 6975 4100
+Wire Wire Line
+	7775 4175 7775 4050
+Connection ~ 7775 4050
+Wire Wire Line
+	7775 4050 8025 4050
+$Comp
+L Device:R R3
+U 1 1 5CAA468B
+P 7775 2900
+F 0 "R3" H 7705 2854 50  0000 R CNN
+F 1 "220r" H 7705 2945 50  0000 R CNN
+F 2 "BurstGen:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7705 2900 50  0001 C CNN
+F 3 "~" H 7775 2900 50  0001 C CNN
+F 4 "221XBK-ND " H 0   0   50  0001 C CNN "MPN"
+	1    7775 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7775 3050 7775 3175
+Connection ~ 7775 3175
+Wire Wire Line
+	7775 3175 8025 3175
+Wire Wire Line
+	7775 2750 7775 2575
+Wire Wire Line
+	7775 2575 6975 2575
+Connection ~ 6975 2575
+Wire Wire Line
+	6150 1750 6150 1950
+Wire Wire Line
+	6150 1950 6750 1950
+Wire Wire Line
+	6750 1950 6750 1650
+$Comp
+L Device:CP C1
+U 1 1 5CAB54F4
+P 7000 1650
+F 0 "C1" V 7255 1650 50  0000 C CNN
+F 1 "10u" V 7164 1650 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 7038 1500 50  0001 C CNN
+F 3 "~" H 7000 1650 50  0001 C CNN
+F 4 "P19549CT-ND" H 0   0   50  0001 C CNN "MPN"
+	1    7000 1650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5CAB63D0
+P 7300 2000
+F 0 "R2" H 7230 1954 50  0000 R CNN
+F 1 "100k" H 7230 2045 50  0000 R CNN
+F 2 "BurstGen:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7230 2000 50  0001 C CNN
+F 3 "~" H 7300 2000 50  0001 C CNN
+F 4 "100KXBK-ND" H 0   0   50  0001 C CNN "MPN"
+	1    7300 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5CAB6BA1
+P 7600 1650
+F 0 "R1" V 7807 1650 50  0000 C CNN
+F 1 "100r" V 7716 1650 50  0000 C CNN
+F 2 "BurstGen:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7530 1650 50  0001 C CNN
+F 3 "~" H 7600 1650 50  0001 C CNN
+F 4 "100XBK-ND" H 0   0   50  0001 C CNN "MPN"
+	1    7600 1650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6750 1650 6850 1650
+Connection ~ 6750 1650
+Wire Wire Line
+	7150 1650 7300 1650
+Wire Wire Line
+	7300 1850 7300 1650
+Connection ~ 7300 1650
+Wire Wire Line
+	7300 1650 7450 1650
+Wire Wire Line
+	7750 1650 8200 1650
+Wire Wire Line
+	7300 2200 8200 2200
+Wire Wire Line
+	8200 2200 8200 1750
+Connection ~ 7300 2200
+Wire Wire Line
+	7300 2200 7300 2250
+Connection ~ 6050 6150
+Wire Wire Line
+	6050 6150 6050 6075
+Wire Wire Line
+	6050 6150 6425 6150
+$Comp
+L Device:R R13
+U 1 1 5CADB7FA
+P 5575 6350
+F 0 "R13" H 5505 6396 50  0000 R CNN
+F 1 "2.2k" H 5505 6305 50  0000 R CNN
+F 2 "BurstGen:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5505 6350 50  0001 C CNN
+F 3 "~" H 5575 6350 50  0001 C CNN
+F 4 "2.21KXBK-ND" H 0   0   50  0001 C CNN "MPN"
+	1    5575 6350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:CP C9
+U 1 1 5CAE0A4A
+P 5575 6725
+F 0 "C9" H 5693 6771 50  0000 L CNN
+F 1 "10u" H 5693 6680 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 5613 6575 50  0001 C CNN
+F 3 "~" H 5575 6725 50  0001 C CNN
+F 4 "P19549CT-ND" H 0   0   50  0001 C CNN "MPN"
+	1    5575 6725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 6075 5850 6150
+Wire Wire Line
+	5850 6150 5575 6150
+Wire Wire Line
+	5575 6150 5575 6200
+Wire Wire Line
+	5575 6575 5575 6500
+Wire Wire Line
+	6050 6975 5575 6975
+Wire Wire Line
+	5575 6975 5575 6875
+Connection ~ 6050 6975
+Wire Wire Line
+	3975 1200 3900 1200
+Wire Wire Line
+	2650 1850 2650 3425
+Wire Wire Line
+	3975 2575 3975 1200
+Wire Wire Line
+	3975 2575 3975 4550
+$Comp
+L power:GND #PWR02
+U 1 1 5CB04197
+P 3150 2525
+F 0 "#PWR02" H 3150 2275 50  0001 C CNN
+F 1 "GND" H 3150 2375 50  0000 C CNN
+F 2 "" H 3150 2525 50  0001 C CNN
+F 3 "" H 3150 2525 50  0001 C CNN
+	1    3150 2525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 2450 3150 2525
+Wire Wire Line
+	5950 1550 5950 3625
+Wire Wire Line
+	5950 1550 6150 1550
+Connection ~ 2900 3525
+Wire Wire Line
+	2900 3525 2975 3525
+Connection ~ 2900 4500
+Wire Wire Line
+	2900 4500 3425 4500
+Wire Wire Line
+	2450 3525 2575 3525
+$Comp
+L Device:D_Zener D2
+U 1 1 5CA3F063
+P 2575 3800
+F 0 "D2" V 2529 3879 50  0000 L CNN
+F 1 "4.7V" V 2620 3879 50  0000 L CNN
+F 2 "BurstGen:D_DO-35_SOD27_P7.62mm_Horizontal" H 2575 3800 50  0001 C CNN
+F 3 "~" H 2575 3800 50  0001 C CNN
+F 4 "1N5230BFSCT-ND" H 0   0   50  0001 C CNN "MPN"
+	1    2575 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D3
+U 1 1 5CA40B32
+P 2575 4250
+F 0 "D3" V 2621 4171 50  0000 R CNN
+F 1 "4.7V" V 2530 4171 50  0000 R CNN
+F 2 "BurstGen:D_DO-35_SOD27_P7.62mm_Horizontal" H 2575 4250 50  0001 C CNN
+F 3 "~" H 2575 4250 50  0001 C CNN
+F 4 "1N5230BFSCT-ND" H 0   0   50  0001 C CNN "MPN"
+	1    2575 4250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2575 3650 2575 3525
+Connection ~ 2575 3525
+Wire Wire Line
+	2575 3525 2900 3525
+Wire Wire Line
+	2575 3950 2575 4100
+Wire Wire Line
+	2575 4400 2575 4500
+Wire Wire Line
+	2575 4500 2675 4500
+Connection ~ 2675 4500
+$EndSCHEMATC
