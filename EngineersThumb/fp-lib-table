@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name BurstGen)(type KiCad)(uri "$(KIPRJMOD)/EngineersThumb.pretty")(options "")(descr ""))
-)
